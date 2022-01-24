@@ -16,8 +16,14 @@ After making required changes, submit a pull request. Once your PR is approved a
 ```
 
 This will initiate a submodule (if necessary) that tracks the *gh-pages* branch
-of the [mongo-java-driver](https://github.com/mongodb/mongo-java-driver). It will
-then build the documents and copy items over as necessary (using rsync).
+of the [mongo-java-driver](https://github.com/mongodb/mongo-java-driver) and
+build the documents for that version.
+
+!!! note
+    The content of the documentation is additive, so the script may
+    generate content that didn't exist for older versions. Avoid adding
+    the new content. Use `git commit -a` to add tracked files and not new
+    ones.
 
 ## Building API Documentation
 
